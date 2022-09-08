@@ -1,0 +1,840 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C55B0C6F201AC75C004B9307 /* SocketConnectionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55B0C6E201AC75C004B9307 /* SocketConnectionProtocol.swift */; };
+		C55B0C71201AF667004B9307 /* SocketCodecProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55B0C70201AF667004B9307 /* SocketCodecProtocol.swift */; };
+		C55B0C73201AF6E9004B9307 /* SocketPacketProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55B0C72201AF6E9004B9307 /* SocketPacketProtocol.swift */; };
+		C55B0C75201AFA99004B9307 /* SocketYYDEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55B0C74201AFA99004B9307 /* SocketYYDEncoder.swift */; };
+		C55B0C77201AFAA3004B9307 /* SocketYYDDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55B0C76201AFAA3004B9307 /* SocketYYDDecoder.swift */; };
+		C55B0C79201B1A87004B9307 /* SocketPacketContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55B0C78201B1A86004B9307 /* SocketPacketContext.swift */; };
+		C55B0C7B201B23AE004B9307 /* MulticastDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55B0C7A201B23AE004B9307 /* MulticastDelegate.swift */; };
+		C55B0C7D201B2636004B9307 /* CommonTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55B0C7C201B2636004B9307 /* CommonTool.swift */; };
+		C55B0C7F201B3595004B9307 /* Dictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55B0C7E201B3595004B9307 /* Dictionary+Extension.swift */; };
+		C5667BEE201C27AE00B8F3D3 /* SocketTextEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5667BED201C27AE00B8F3D3 /* SocketTextEncoder.swift */; };
+		C5667BF0201C27C800B8F3D3 /* SocketTextDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5667BEF201C27C800B8F3D3 /* SocketTextDecoder.swift */; };
+		C5667BF2201C298A00B8F3D3 /* SocketJSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5667BF1201C298A00B8F3D3 /* SocketJSONDecoder.swift */; };
+		C5667BF4201C2A1400B8F3D3 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5667BF3201C2A1400B8F3D3 /* String+Extension.swift */; };
+		C5667BF6201C2A3300B8F3D3 /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5667BF5201C2A3300B8F3D3 /* Data+Extension.swift */; };
+		C5667BF8201C2ADB00B8F3D3 /* SocketJSONEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5667BF7201C2ADB00B8F3D3 /* SocketJSONEncoder.swift */; };
+		C574AC88201EBDEE0037BBCF /* SocketChannel+Heartbeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = C574AC87201EBDEE0037BBCF /* SocketChannel+Heartbeat.swift */; };
+		C574AC8A201EBF4B0037BBCF /* SocketChannelHeartbeatProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C574AC89201EBF4B0037BBCF /* SocketChannelHeartbeatProtocol.swift */; };
+		C574AC8C201EC31A0037BBCF /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = C574AC8B201EC31A0037BBCF /* Global.swift */; };
+		C574AC8F201EFB450037BBCF /* GCDTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C574AC8E201EFB450037BBCF /* GCDTimer.swift */; };
+		C574AC94201EFD740037BBCF /* SocketChannelProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C574AC93201EFD740037BBCF /* SocketChannelProxy.swift */; };
+		C574AC96201EFD880037BBCF /* SocketCallReplyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C574AC95201EFD880037BBCF /* SocketCallReplyManager.swift */; };
+		C574AC98201EFD9F0037BBCF /* SocketCallReplyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C574AC97201EFD9F0037BBCF /* SocketCallReplyProtocol.swift */; };
+		C574AC9A201EFFBB0037BBCF /* SocketCallReply.swift in Sources */ = {isa = PBXBuildFile; fileRef = C574AC99201EFFBB0037BBCF /* SocketCallReply.swift */; };
+		C574AC9C201F18820037BBCF /* SocketYYDCMDEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C574AC9B201F18820037BBCF /* SocketYYDCMDEncoder.swift */; };
+		C574AC9E201F18930037BBCF /* SocketYYDCMDDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C574AC9D201F18930037BBCF /* SocketYYDCMDDecoder.swift */; };
+		C574ACA0201F31E80037BBCF /* ConnectCallReply.swift in Sources */ = {isa = PBXBuildFile; fileRef = C574AC9F201F31E80037BBCF /* ConnectCallReply.swift */; };
+		C58258102019785800ADA2E6 /* YYDNetKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C582580E2019785800ADA2E6 /* YYDNetKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C582581D201978D100ADA2E6 /* YYDNetKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C582581C201978D100ADA2E6 /* YYDNetKitTests.swift */; };
+		C582581F201978D100ADA2E6 /* YYDNetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C582580B2019785800ADA2E6 /* YYDNetKit.framework */; };
+		C58258362019A8AB00ADA2E6 /* SocketChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58258352019A8AB00ADA2E6 /* SocketChannel.swift */; };
+		C58258382019AD3E00ADA2E6 /* SocketConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58258372019AD3E00ADA2E6 /* SocketConnection.swift */; };
+		C582583A2019AD9000ADA2E6 /* SocketConnectParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58258392019AD9000ADA2E6 /* SocketConnectParam.swift */; };
+		C58258472019E7EB00ADA2E6 /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C58258462019E7EB00ADA2E6 /* CocoaAsyncSocket.framework */; };
+		C58258482019E8D700ADA2E6 /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C58258462019E7EB00ADA2E6 /* CocoaAsyncSocket.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		C58258492019EC5A00ADA2E6 /* CocoaAsyncSocket.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C58258462019E7EB00ADA2E6 /* CocoaAsyncSocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C58258532019EE0E00ADA2E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58258522019EE0E00ADA2E6 /* AppDelegate.swift */; };
+		C58258552019EE0E00ADA2E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58258542019EE0E00ADA2E6 /* ViewController.swift */; };
+		C58258582019EE0E00ADA2E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C58258562019EE0E00ADA2E6 /* Main.storyboard */; };
+		C582585A2019EE0E00ADA2E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C58258592019EE0E00ADA2E6 /* Assets.xcassets */; };
+		C582585D2019EE0E00ADA2E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C582585B2019EE0E00ADA2E6 /* LaunchScreen.storyboard */; };
+		C58258632019F03700ADA2E6 /* CocoaAsyncSocket.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C58258462019E7EB00ADA2E6 /* CocoaAsyncSocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C582586B2019FAE600ADA2E6 /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C58258462019E7EB00ADA2E6 /* CocoaAsyncSocket.framework */; };
+		C582586C2019FAE600ADA2E6 /* CocoaAsyncSocket.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C58258462019E7EB00ADA2E6 /* CocoaAsyncSocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C582586E2019FAEA00ADA2E6 /* YYDNetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C582580B2019785800ADA2E6 /* YYDNetKit.framework */; };
+		C582586F2019FAEA00ADA2E6 /* YYDNetKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C582580B2019785800ADA2E6 /* YYDNetKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C5825820201978D100ADA2E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C58258022019785800ADA2E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C582580A2019785800ADA2E6;
+			remoteInfo = YYDNetKit;
+		};
+		C58258702019FAEA00ADA2E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C58258022019785800ADA2E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C582580A2019785800ADA2E6;
+			remoteInfo = YYDNetKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C58258442019E11300ADA2E6 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				C58258492019EC5A00ADA2E6 /* CocoaAsyncSocket.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		C582584A2019ECDF00ADA2E6 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				C58258632019F03700ADA2E6 /* CocoaAsyncSocket.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		C582586D2019FAE600ADA2E6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C582586F2019FAEA00ADA2E6 /* YYDNetKit.framework in Embed Frameworks */,
+				C582586C2019FAE600ADA2E6 /* CocoaAsyncSocket.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C55B0C6E201AC75C004B9307 /* SocketConnectionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketConnectionProtocol.swift; sourceTree = "<group>"; };
+		C55B0C70201AF667004B9307 /* SocketCodecProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketCodecProtocol.swift; sourceTree = "<group>"; };
+		C55B0C72201AF6E9004B9307 /* SocketPacketProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketPacketProtocol.swift; sourceTree = "<group>"; };
+		C55B0C74201AFA99004B9307 /* SocketYYDEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketYYDEncoder.swift; sourceTree = "<group>"; };
+		C55B0C76201AFAA3004B9307 /* SocketYYDDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketYYDDecoder.swift; sourceTree = "<group>"; };
+		C55B0C78201B1A86004B9307 /* SocketPacketContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketPacketContext.swift; sourceTree = "<group>"; };
+		C55B0C7A201B23AE004B9307 /* MulticastDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MulticastDelegate.swift; sourceTree = "<group>"; };
+		C55B0C7C201B2636004B9307 /* CommonTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTool.swift; sourceTree = "<group>"; };
+		C55B0C7E201B3595004B9307 /* Dictionary+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extension.swift"; sourceTree = "<group>"; };
+		C5667BED201C27AE00B8F3D3 /* SocketTextEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketTextEncoder.swift; sourceTree = "<group>"; };
+		C5667BEF201C27C800B8F3D3 /* SocketTextDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketTextDecoder.swift; sourceTree = "<group>"; };
+		C5667BF1201C298A00B8F3D3 /* SocketJSONDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketJSONDecoder.swift; sourceTree = "<group>"; };
+		C5667BF3201C2A1400B8F3D3 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		C5667BF5201C2A3300B8F3D3 /* Data+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extension.swift"; sourceTree = "<group>"; };
+		C5667BF7201C2ADB00B8F3D3 /* SocketJSONEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketJSONEncoder.swift; sourceTree = "<group>"; };
+		C574AC87201EBDEE0037BBCF /* SocketChannel+Heartbeat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SocketChannel+Heartbeat.swift"; sourceTree = "<group>"; };
+		C574AC89201EBF4B0037BBCF /* SocketChannelHeartbeatProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketChannelHeartbeatProtocol.swift; sourceTree = "<group>"; };
+		C574AC8B201EC31A0037BBCF /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		C574AC8E201EFB450037BBCF /* GCDTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDTimer.swift; sourceTree = "<group>"; };
+		C574AC93201EFD740037BBCF /* SocketChannelProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketChannelProxy.swift; sourceTree = "<group>"; };
+		C574AC95201EFD880037BBCF /* SocketCallReplyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketCallReplyManager.swift; sourceTree = "<group>"; };
+		C574AC97201EFD9F0037BBCF /* SocketCallReplyProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketCallReplyProtocol.swift; sourceTree = "<group>"; };
+		C574AC99201EFFBB0037BBCF /* SocketCallReply.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketCallReply.swift; sourceTree = "<group>"; };
+		C574AC9B201F18820037BBCF /* SocketYYDCMDEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketYYDCMDEncoder.swift; sourceTree = "<group>"; };
+		C574AC9D201F18930037BBCF /* SocketYYDCMDDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketYYDCMDDecoder.swift; sourceTree = "<group>"; };
+		C574AC9F201F31E80037BBCF /* ConnectCallReply.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectCallReply.swift; sourceTree = "<group>"; };
+		C582580B2019785800ADA2E6 /* YYDNetKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YYDNetKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C582580E2019785800ADA2E6 /* YYDNetKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYDNetKit.h; sourceTree = "<group>"; };
+		C582580F2019785800ADA2E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C582581A201978D000ADA2E6 /* YYDNetKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YYDNetKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C582581C201978D100ADA2E6 /* YYDNetKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYDNetKitTests.swift; sourceTree = "<group>"; };
+		C582581E201978D100ADA2E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C58258352019A8AB00ADA2E6 /* SocketChannel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketChannel.swift; sourceTree = "<group>"; };
+		C58258372019AD3E00ADA2E6 /* SocketConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketConnection.swift; sourceTree = "<group>"; };
+		C58258392019AD9000ADA2E6 /* SocketConnectParam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketConnectParam.swift; sourceTree = "<group>"; };
+		C58258462019E7EB00ADA2E6 /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaAsyncSocket.framework; path = Frameworks/CocoaAsyncSocket.framework; sourceTree = "<group>"; };
+		C58258502019EE0D00ADA2E6 /* YYDNetKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YYDNetKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C58258522019EE0E00ADA2E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C58258542019EE0E00ADA2E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C58258572019EE0E00ADA2E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C58258592019EE0E00ADA2E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C582585C2019EE0E00ADA2E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C582585E2019EE0E00ADA2E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C58258072019785800ADA2E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C58258472019E7EB00ADA2E6 /* CocoaAsyncSocket.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5825817201978D000ADA2E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C58258482019E8D700ADA2E6 /* CocoaAsyncSocket.framework in Frameworks */,
+				C582581F201978D100ADA2E6 /* YYDNetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C582584D2019EE0D00ADA2E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C582586E2019FAEA00ADA2E6 /* YYDNetKit.framework in Frameworks */,
+				C582586B2019FAE600ADA2E6 /* CocoaAsyncSocket.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C574AC8D201EFB1C0037BBCF /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				C574AC90201EFBCC0037BBCF /* Socket */,
+				C55B0C7A201B23AE004B9307 /* MulticastDelegate.swift */,
+				C55B0C7C201B2636004B9307 /* CommonTool.swift */,
+				C574AC8E201EFB450037BBCF /* GCDTimer.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		C574AC90201EFBCC0037BBCF /* Socket */ = {
+			isa = PBXGroup;
+			children = (
+				C574AC91201EFD000037BBCF /* Core */,
+				C574AC92201EFD000037BBCF /* RPC */,
+			);
+			path = Socket;
+			sourceTree = "<group>";
+		};
+		C574AC91201EFD000037BBCF /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C55B0C6E201AC75C004B9307 /* SocketConnectionProtocol.swift */,
+				C574AC89201EBF4B0037BBCF /* SocketChannelHeartbeatProtocol.swift */,
+				C55B0C70201AF667004B9307 /* SocketCodecProtocol.swift */,
+				C55B0C72201AF6E9004B9307 /* SocketPacketProtocol.swift */,
+				C58258392019AD9000ADA2E6 /* SocketConnectParam.swift */,
+				C58258372019AD3E00ADA2E6 /* SocketConnection.swift */,
+				C58258352019A8AB00ADA2E6 /* SocketChannel.swift */,
+				C574AC87201EBDEE0037BBCF /* SocketChannel+Heartbeat.swift */,
+				C55B0C78201B1A86004B9307 /* SocketPacketContext.swift */,
+				C55B0C74201AFA99004B9307 /* SocketYYDEncoder.swift */,
+				C55B0C76201AFAA3004B9307 /* SocketYYDDecoder.swift */,
+				C5667BED201C27AE00B8F3D3 /* SocketTextEncoder.swift */,
+				C5667BEF201C27C800B8F3D3 /* SocketTextDecoder.swift */,
+				C5667BF7201C2ADB00B8F3D3 /* SocketJSONEncoder.swift */,
+				C5667BF1201C298A00B8F3D3 /* SocketJSONDecoder.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		C574AC92201EFD000037BBCF /* RPC */ = {
+			isa = PBXGroup;
+			children = (
+				C574AC97201EFD9F0037BBCF /* SocketCallReplyProtocol.swift */,
+				C574AC93201EFD740037BBCF /* SocketChannelProxy.swift */,
+				C574AC95201EFD880037BBCF /* SocketCallReplyManager.swift */,
+				C574AC99201EFFBB0037BBCF /* SocketCallReply.swift */,
+				C574AC9F201F31E80037BBCF /* ConnectCallReply.swift */,
+				C574AC9B201F18820037BBCF /* SocketYYDCMDEncoder.swift */,
+				C574AC9D201F18930037BBCF /* SocketYYDCMDDecoder.swift */,
+			);
+			path = RPC;
+			sourceTree = "<group>";
+		};
+		C58258012019785800ADA2E6 = {
+			isa = PBXGroup;
+			children = (
+				C582580D2019785800ADA2E6 /* YYDNetKit */,
+				C582581B201978D100ADA2E6 /* YYDNetKitTests */,
+				C58258512019EE0E00ADA2E6 /* YYDNetKitDemo */,
+				C582580C2019785800ADA2E6 /* Products */,
+				C58258422019DFD400ADA2E6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C582580C2019785800ADA2E6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C582580B2019785800ADA2E6 /* YYDNetKit.framework */,
+				C582581A201978D000ADA2E6 /* YYDNetKitTests.xctest */,
+				C58258502019EE0D00ADA2E6 /* YYDNetKitDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C582580D2019785800ADA2E6 /* YYDNetKit */ = {
+			isa = PBXGroup;
+			children = (
+				C582580E2019785800ADA2E6 /* YYDNetKit.h */,
+				C574AC8B201EC31A0037BBCF /* Global.swift */,
+				C55B0C7E201B3595004B9307 /* Dictionary+Extension.swift */,
+				C5667BF3201C2A1400B8F3D3 /* String+Extension.swift */,
+				C5667BF5201C2A3300B8F3D3 /* Data+Extension.swift */,
+				C574AC8D201EFB1C0037BBCF /* Tools */,
+				C58258342019A7C600ADA2E6 /* Manager */,
+				C582580F2019785800ADA2E6 /* Info.plist */,
+			);
+			path = YYDNetKit;
+			sourceTree = "<group>";
+		};
+		C582581B201978D100ADA2E6 /* YYDNetKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				C582581C201978D100ADA2E6 /* YYDNetKitTests.swift */,
+				C582581E201978D100ADA2E6 /* Info.plist */,
+			);
+			path = YYDNetKitTests;
+			sourceTree = "<group>";
+		};
+		C58258342019A7C600ADA2E6 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		C58258422019DFD400ADA2E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C58258462019E7EB00ADA2E6 /* CocoaAsyncSocket.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C58258512019EE0E00ADA2E6 /* YYDNetKitDemo */ = {
+			isa = PBXGroup;
+			children = (
+				C58258522019EE0E00ADA2E6 /* AppDelegate.swift */,
+				C58258542019EE0E00ADA2E6 /* ViewController.swift */,
+				C58258562019EE0E00ADA2E6 /* Main.storyboard */,
+				C58258592019EE0E00ADA2E6 /* Assets.xcassets */,
+				C582585B2019EE0E00ADA2E6 /* LaunchScreen.storyboard */,
+				C582585E2019EE0E00ADA2E6 /* Info.plist */,
+			);
+			path = YYDNetKitDemo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C58258082019785800ADA2E6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C58258102019785800ADA2E6 /* YYDNetKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C582580A2019785800ADA2E6 /* YYDNetKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C58258132019785800ADA2E6 /* Build configuration list for PBXNativeTarget "YYDNetKit" */;
+			buildPhases = (
+				C58258062019785800ADA2E6 /* Sources */,
+				C58258072019785800ADA2E6 /* Frameworks */,
+				C58258082019785800ADA2E6 /* Headers */,
+				C58258092019785800ADA2E6 /* Resources */,
+				C582584A2019ECDF00ADA2E6 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YYDNetKit;
+			productName = YYDNetKit;
+			productReference = C582580B2019785800ADA2E6 /* YYDNetKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C5825819201978D000ADA2E6 /* YYDNetKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5825822201978D100ADA2E6 /* Build configuration list for PBXNativeTarget "YYDNetKitTests" */;
+			buildPhases = (
+				C5825816201978D000ADA2E6 /* Sources */,
+				C5825817201978D000ADA2E6 /* Frameworks */,
+				C5825818201978D000ADA2E6 /* Resources */,
+				C58258442019E11300ADA2E6 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C5825821201978D100ADA2E6 /* PBXTargetDependency */,
+			);
+			name = YYDNetKitTests;
+			productName = YYDNetKitTests;
+			productReference = C582581A201978D000ADA2E6 /* YYDNetKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C582584F2019EE0D00ADA2E6 /* YYDNetKitDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C582585F2019EE0E00ADA2E6 /* Build configuration list for PBXNativeTarget "YYDNetKitDemo" */;
+			buildPhases = (
+				C582584C2019EE0D00ADA2E6 /* Sources */,
+				C582584D2019EE0D00ADA2E6 /* Frameworks */,
+				C582584E2019EE0D00ADA2E6 /* Resources */,
+				C582586D2019FAE600ADA2E6 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C58258712019FAEA00ADA2E6 /* PBXTargetDependency */,
+			);
+			name = YYDNetKitDemo;
+			productName = YYDNetKitDemo;
+			productReference = C58258502019EE0D00ADA2E6 /* YYDNetKitDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C58258022019785800ADA2E6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = yongyida;
+				TargetAttributes = {
+					C582580A2019785800ADA2E6 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+					C5825819201978D000ADA2E6 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					C582584F2019EE0D00ADA2E6 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C58258052019785800ADA2E6 /* Build configuration list for PBXProject "YYDNetKit" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C58258012019785800ADA2E6;
+			productRefGroup = C582580C2019785800ADA2E6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C582580A2019785800ADA2E6 /* YYDNetKit */,
+				C5825819201978D000ADA2E6 /* YYDNetKitTests */,
+				C582584F2019EE0D00ADA2E6 /* YYDNetKitDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C58258092019785800ADA2E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5825818201978D000ADA2E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C582584E2019EE0D00ADA2E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C582585D2019EE0E00ADA2E6 /* LaunchScreen.storyboard in Resources */,
+				C582585A2019EE0E00ADA2E6 /* Assets.xcassets in Resources */,
+				C58258582019EE0E00ADA2E6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C58258062019785800ADA2E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5667BF4201C2A1400B8F3D3 /* String+Extension.swift in Sources */,
+				C5667BF6201C2A3300B8F3D3 /* Data+Extension.swift in Sources */,
+				C574AC94201EFD740037BBCF /* SocketChannelProxy.swift in Sources */,
+				C55B0C7D201B2636004B9307 /* CommonTool.swift in Sources */,
+				C55B0C75201AFA99004B9307 /* SocketYYDEncoder.swift in Sources */,
+				C55B0C6F201AC75C004B9307 /* SocketConnectionProtocol.swift in Sources */,
+				C5667BF2201C298A00B8F3D3 /* SocketJSONDecoder.swift in Sources */,
+				C574AC88201EBDEE0037BBCF /* SocketChannel+Heartbeat.swift in Sources */,
+				C574ACA0201F31E80037BBCF /* ConnectCallReply.swift in Sources */,
+				C574AC98201EFD9F0037BBCF /* SocketCallReplyProtocol.swift in Sources */,
+				C58258382019AD3E00ADA2E6 /* SocketConnection.swift in Sources */,
+				C5667BF0201C27C800B8F3D3 /* SocketTextDecoder.swift in Sources */,
+				C55B0C71201AF667004B9307 /* SocketCodecProtocol.swift in Sources */,
+				C574AC96201EFD880037BBCF /* SocketCallReplyManager.swift in Sources */,
+				C574AC9E201F18930037BBCF /* SocketYYDCMDDecoder.swift in Sources */,
+				C58258362019A8AB00ADA2E6 /* SocketChannel.swift in Sources */,
+				C574AC8A201EBF4B0037BBCF /* SocketChannelHeartbeatProtocol.swift in Sources */,
+				C574AC9A201EFFBB0037BBCF /* SocketCallReply.swift in Sources */,
+				C55B0C73201AF6E9004B9307 /* SocketPacketProtocol.swift in Sources */,
+				C574AC9C201F18820037BBCF /* SocketYYDCMDEncoder.swift in Sources */,
+				C55B0C79201B1A87004B9307 /* SocketPacketContext.swift in Sources */,
+				C55B0C7B201B23AE004B9307 /* MulticastDelegate.swift in Sources */,
+				C5667BF8201C2ADB00B8F3D3 /* SocketJSONEncoder.swift in Sources */,
+				C5667BEE201C27AE00B8F3D3 /* SocketTextEncoder.swift in Sources */,
+				C574AC8F201EFB450037BBCF /* GCDTimer.swift in Sources */,
+				C55B0C77201AFAA3004B9307 /* SocketYYDDecoder.swift in Sources */,
+				C582583A2019AD9000ADA2E6 /* SocketConnectParam.swift in Sources */,
+				C55B0C7F201B3595004B9307 /* Dictionary+Extension.swift in Sources */,
+				C574AC8C201EC31A0037BBCF /* Global.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5825816201978D000ADA2E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C582581D201978D100ADA2E6 /* YYDNetKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C582584C2019EE0D00ADA2E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C58258552019EE0E00ADA2E6 /* ViewController.swift in Sources */,
+				C58258532019EE0E00ADA2E6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C5825821201978D100ADA2E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C582580A2019785800ADA2E6 /* YYDNetKit */;
+			targetProxy = C5825820201978D100ADA2E6 /* PBXContainerItemProxy */;
+		};
+		C58258712019FAEA00ADA2E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C582580A2019785800ADA2E6 /* YYDNetKit */;
+			targetProxy = C58258702019FAEA00ADA2E6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C58258562019EE0E00ADA2E6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C58258572019EE0E00ADA2E6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C582585B2019EE0E00ADA2E6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C582585C2019EE0E00ADA2E6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C58258112019785800ADA2E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C58258122019785800ADA2E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C58258142019785800ADA2E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = BR482G24CR;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = YYDNetKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yydrobot.YYDNetKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64";
+			};
+			name = Debug;
+		};
+		C58258152019785800ADA2E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = BR482G24CR;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = YYDNetKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yydrobot.YYDNetKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64";
+			};
+			name = Release;
+		};
+		C5825823201978D100ADA2E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BR482G24CR;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = YYDNetKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yydrobot.YYDNetKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C5825824201978D100ADA2E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BR482G24CR;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = YYDNetKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yydrobot.YYDNetKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C58258602019EE0E00ADA2E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BR482G24CR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = YYDNetKitDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yydrobot.YYDNetKitDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64";
+			};
+			name = Debug;
+		};
+		C58258612019EE0E00ADA2E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BR482G24CR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = YYDNetKitDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yydrobot.YYDNetKitDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C58258052019785800ADA2E6 /* Build configuration list for PBXProject "YYDNetKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C58258112019785800ADA2E6 /* Debug */,
+				C58258122019785800ADA2E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C58258132019785800ADA2E6 /* Build configuration list for PBXNativeTarget "YYDNetKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C58258142019785800ADA2E6 /* Debug */,
+				C58258152019785800ADA2E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5825822201978D100ADA2E6 /* Build configuration list for PBXNativeTarget "YYDNetKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5825823201978D100ADA2E6 /* Debug */,
+				C5825824201978D100ADA2E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C582585F2019EE0E00ADA2E6 /* Build configuration list for PBXNativeTarget "YYDNetKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C58258602019EE0E00ADA2E6 /* Debug */,
+				C58258612019EE0E00ADA2E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C58258022019785800ADA2E6 /* Project object */;
+}
